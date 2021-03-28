@@ -59,3 +59,12 @@ body {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.17, 1.66, 0.58, 1);
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+  .clock {
+    width: 20rem;
+    height: 20rem;
+  }
+}
