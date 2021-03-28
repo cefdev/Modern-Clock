@@ -16,6 +16,8 @@ body {
 }
 
 .clock {
+  background: url(./template.jpg);
+  background-size: contain;
   width: 30rem;
   height: 30rem;
   border: 20px solid black;
@@ -60,11 +62,62 @@ body {
   transition-timing-function: cubic-bezier(0.17, 1.66, 0.58, 1);
 }
 
-/* Media Queries */
+.three {
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  right: -5px;
+  border-radius: 5px;
+}
 
+.six {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+  bottom: -5px;
+  left: 50%;
+  border-radius: 5px;
+}
+
+.nine {
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: -5px;
+  border-radius: 5px;
+}
+
+.twelve {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+  top: -5px;
+  left: 50%;
+  border-radius: 5px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 450px) {
   .clock {
     width: 20rem;
     height: 20rem;
+  }
+
+  .three,
+  .nine {
+    width: 18px;
+    height: 4px;
+  }
+
+  .six,
+  .twelve {
+    width: 4px;
+    height: 18px;
   }
 }
