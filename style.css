@@ -62,6 +62,11 @@ body {
   transition-timing-function: cubic-bezier(0.17, 1.66, 0.58, 1);
 }
 
+.hand.hour-hand {
+  width: 40%;
+  left: 10%;
+}
+
 .three {
   width: 20px;
   height: 5px;
